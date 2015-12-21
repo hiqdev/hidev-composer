@@ -1,0 +1,55 @@
+{
+    "name": "hiqdev/hidev-composer",
+    "type": "yii2-extension",
+    "description": "Composer plugin for HiDev",
+    "keywords": [
+        "hidev",
+        "composer",
+        "packagist",
+        "plugin"
+    ],
+    "homepage": "https://github.com/hiqdev/hidev-composer",
+    "license": "BSD-3-Clause",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/hiqdev/hidev-composer",
+        "issues": "https://github.com/hiqdev/hidev-composer/issues",
+        "wiki": "https://github.com/hiqdev/hidev-composer/wiki",
+        "forum": "http://forum.hiqdev.com/"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "silverfire@hiqdev.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "tafid@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require-dev": {
+        "hiqdev/hidev": "*",
+        "hiqdev/yii2-pluginmanager": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hidev\\composer\\": "src"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+package:
+    type:           yii2-extension
+    name:           hidev-composer
+    namespace:      hidev\composer
+    headline:       HiDev Composer
+    title:          Composer plugin for HiDev
+    keywords:       hidev, composer, packagist, plugin
+    year:           2015
+    description:    |
+        [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
+
+        This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev.
+
+require:
+    hiqdev/hidev-php:           "*@dev"
+    hiqdev/hidev-readme:        "*@dev"
+    hiqdev/hidev-vendor:        "*@dev"
+    hiqdev/hidev-license:       "*@dev"
+    hiqdev/hidev-phpunit:       "*@dev"
+    hiqdev/hidev-travis-ci:     "*@dev"
+    hiqdev/hidev-scrutinizer:   "*@dev"
+    hiqdev/hidev-php-cs-fixer:  "*@dev"

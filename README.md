@@ -1,14 +1,13 @@
-HiDev Scrutinizer
+HiDev Composer
 =================
 
-**Scrutinizer plugin for HiDev**
+**Composer plugin for HiDev**
 
-[![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-scrutinizer/v/stable)](https://packagist.org/packages/hiqdev/hidev-scrutinizer)
-[![Total Downloads](https://poser.pugx.org/hiqdev/hidev-scrutinizer/downloads)](https://packagist.org/packages/hiqdev/hidev-scrutinizer)
-[![Build Status](https://img.shields.io/travis/hiqdev/hidev-scrutinizer.svg)](https://travis-ci.org/hiqdev/hidev-scrutinizer)
+[![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-composer/v/stable)](https://packagist.org/packages/hiqdev/hidev-composer)
+[![Total Downloads](https://poser.pugx.org/hiqdev/hidev-composer/downloads)](https://packagist.org/packages/hiqdev/hidev-composer)
+[![Build Status](https://img.shields.io/travis/hiqdev/hidev-composer)](https://travis-ci.org/hiqdev/hidev-composer)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
-This plugin enables [Scrutinizer](https://scrutinizer-ci.org/) support for HiDev.
 
 ## Installation
 
@@ -17,13 +16,13 @@ The preferred way to install this yii2-extension is through [composer](http://ge
 Either run
 
 ```sh
-php composer.phar require "hiqdev/hidev-scrutinizer"
+php composer.phar require "hiqdev/hidev-composer"
 ```
 
 or add
 
 ```json
-"hiqdev/hidev-scrutinizer": "*"
+"hiqdev/hidev-composer": "*"
 ```
 
 to the require section of your composer.json.

@@ -1,13 +1,15 @@
 HiDev Composer
-=================
+==============
 
 **Composer plugin for HiDev**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-composer/v/stable)](https://packagist.org/packages/hiqdev/hidev-composer)
 [![Total Downloads](https://poser.pugx.org/hiqdev/hidev-composer/downloads)](https://packagist.org/packages/hiqdev/hidev-composer)
-[![Build Status](https://img.shields.io/travis/hiqdev/hidev-composer)](https://travis-ci.org/hiqdev/hidev-composer)
+[![Build Status](https://img.shields.io/travis/hiqdev/hidev-composer.svg)](https://travis-ci.org/hiqdev/hidev-composer)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
+
+This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev.
 
 ## Installation
 

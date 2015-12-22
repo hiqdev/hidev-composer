@@ -14,7 +14,7 @@ namespace hidev\composer\goals;
 /**
  * Goal for composer.json.
  */
-class ComposerJsonGoal extends TemplateGoal
+class ComposerJsonGoal extends \hidev\goals\TemplateGoal
 {
     protected $_file = 'composer.json';
 

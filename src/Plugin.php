@@ -16,7 +16,7 @@ class Plugin extends \hiqdev\pluginmanager\Plugin
     protected $_items = [
         'goals' => [
             'composer'       => 'hidev\composer\goals\ComposerGoal',
-            'composer.json'  => 'hidev\composer\goals\ComposerYmlGoal',
+            'composer.json'  => 'hidev\composer\goals\ComposerJsonGoal',
             'packagist'      => 'hidev\composer\goals\PackagistGoal',
         ],
     ];

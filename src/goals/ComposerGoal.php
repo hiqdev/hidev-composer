@@ -14,7 +14,7 @@ namespace hidev\composer\goals;
 /**
  * Goal for Composer.
  */
-class ComposerGoal extends DefaultGoal
+class ComposerGoal extends \hidev\goals\DefaultGoal
 {
     public function init()
     {
@@ -37,13 +37,6 @@ class ComposerGoal extends DefaultGoal
     }
 
     public function getConfiguration()
-    {
-        $conf = parent::getConfig()->get('composer.json');
-        $conf->runAction('load');
-        return $conf;
-    }
-
-    public function getConfigFile()
     {
         $conf = parent::getConfig()->get('composer.json');
         $conf->runAction('load');

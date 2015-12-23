@@ -18,6 +18,14 @@ class Plugin extends \hiqdev\pluginmanager\Plugin
             'composer'       => 'hidev\composer\goals\ComposerGoal',
             'composer.json'  => 'hidev\composer\goals\ComposerJsonGoal',
             'packagist'      => 'hidev\composer\goals\PackagistGoal',
+            'readme'         => [
+                'markdownBadges' => [
+                    'packagist.stable'    => '[![Latest Stable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ config.composer.fullName }})',
+                    'packagist.unstable'  => '[![Latest Unstable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ config.composer.fullName }})',
+                    'packagist.license'   => '[![License](https://poser.pugx.org/{{ config.composer.fullName }}/v/license)](https://packagist.org/packages/{{ config.composer.fullName }})',
+                    'packagist.downloads' => '[![Total Downloads](https://poser.pugx.org/{{ config.composer.fullName }}/downloads)](https://packagist.org/packages/{{ config.composer.fullName }})',
+                ],
+            ],
         ],
     ];
 }

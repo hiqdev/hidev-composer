@@ -3,6 +3,8 @@ hiqdev/hidev-composer commits history
 
 ## Under development
 
+- Added `markdownBadges`
+    - 146fd07 2015-12-23 + markdownBadges (sol@hiqdev.com)
 
 ## 0.0.1 2015-12-23
 

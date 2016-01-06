@@ -11,11 +11,17 @@
 
 return [
     'components' => [
-        'goals' => [
-            'composer'       => 'hidev\composer\goals\ComposerGoal',
-            'composer.json'  => 'hidev\composer\goals\ComposerJsonGoal',
-            'packagist'      => 'hidev\composer\goals\PackagistGoal',
-            'readme'         => [
+        'config' => [
+            'composer' => [
+                'class' => 'hidev\composer\goals\ComposerGoal',
+            ],
+            'composer.json' => [
+                'class' => 'hidev\composer\goals\ComposerJsonGoal',
+            ],
+            'packagist' => [
+                'class' => 'hidev\composer\goals\PackagistGoal',
+            ],
+            'readme' => [
                 'markdownBadges' => [
                     'packagist.stable'    => '[![Latest Stable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ config.composer.fullName }})',
                     'packagist.unstable'  => '[![Latest Unstable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ config.composer.fullName }})',

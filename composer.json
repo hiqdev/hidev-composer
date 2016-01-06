@@ -43,6 +43,9 @@
             "homepage": "http://hiqdev.com/"
         }
     ],
+    "require": {
+        "hiqdev/composer-extension-plugin": "*@dev"
+    },
     "require-dev": {
         "hiqdev/hidev": "*@dev",
         "hiqdev/yii2-pluginmanager": "*"
@@ -51,5 +54,8 @@
         "psr-4": {
             "hidev\\composer\\": "src"
         }
+    },
+    "extra": {
+        "yii2-extraconfig": "src/yii2-extraconfig.php"
     }
 }

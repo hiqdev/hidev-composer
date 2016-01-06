@@ -20,10 +20,6 @@ class ComposerGoal extends \hidev\goals\DefaultGoal
     {
         parent::init();
         $this->setDeps('composer.json');
-        $this->vcs->setIgnore([
-            'vendor'        => 'vendor dirs',
-            'composer.lock' => 'composer lock files',
-        ], 'first');
     }
 
     public function getNamespace()

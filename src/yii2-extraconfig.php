@@ -29,6 +29,10 @@ return [
                     'packagist.downloads' => '[![Total Downloads](https://poser.pugx.org/{{ config.composer.fullName }}/downloads)](https://packagist.org/packages/{{ config.composer.fullName }})',
                 ],
             ],
+            'vcsignore' => [
+                'vendor'        => 'vendor dirs',
+                'composer.lock' => 'composer lock files',
+            ],
         ],
     ],
 ];

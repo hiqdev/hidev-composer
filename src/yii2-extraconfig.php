@@ -13,13 +13,13 @@ return [
     'components' => [
         'config' => [
             'composer' => [
-                'class' => 'hidev\composer\goals\ComposerGoal',
+                'class' => 'hidev\composer\controllers\ComposerController',
             ],
             'composer.json' => [
-                'class' => 'hidev\composer\goals\ComposerJsonGoal',
+                'class' => 'hidev\composer\controllers\ComposerJsonController',
             ],
             'packagist' => [
-                'class' => 'hidev\composer\goals\PackagistGoal',
+                'class' => 'hidev\composer\controllers\PackagistController',
             ],
             'readme' => [
                 'markdownBadges' => [

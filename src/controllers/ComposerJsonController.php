@@ -9,12 +9,12 @@
  * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\composer\goals;
+namespace hidev\composer\controllers;
 
 /**
  * Goal for composer.json.
  */
-class ComposerJsonGoal extends \hidev\goals\TemplateGoal
+class ComposerJsonController extends \hidev\controllers\FileController
 {
     protected $_file = 'composer.json';
 
@@ -24,10 +24,10 @@ class ComposerJsonGoal extends \hidev\goals\TemplateGoal
         $sets = [
             'name'        => $this->fullName,
             'type'        => $this->type,
-            'description' => $this->package->title,
-            'keywords'    => $this->package->keywords,
-            'homepage'    => $this->package->homepage,
-            'license'     => $this->package->license,
+            'description' => $this->takePackage()->title,
+            'keywords'    => $this->takePackage()->keywords,
+            'homepage'    => $this->takePackage()->homepage,
+            'license'     => $this->takePackage()->license,
             'support'     => $this->support,
             'authors'     => $this->authors,
             'require'     => $this->require,
@@ -48,30 +48,30 @@ class ComposerJsonGoal extends \hidev\goals\TemplateGoal
      */
     public function getType()
     {
-        return $this->rawItem('type') ?: $this->package->type;
+        return $this->rawItem('type') ?: $this->takePackage()->type;
     }
 
     public function getFullName()
     {
-        return $this->getItem('name') ?: $this->package->fullName;
+        return $this->getItem('name') ?: $this->takePackage()->fullName;
     }
 
     public function getSupport()
     {
         return array_merge(array_filter([
-            'email'  => $this->vendor->email,
-            'source' => $this->package->source,
-            'issues' => $this->package->issues,
-            'wiki'   => $this->package->wiki,
-            'forum'  => $this->package->forum,
+            'email'  => $this->takeVendor()->email,
+            'source' => $this->takePackage()->source,
+            'issues' => $this->takePackage()->issues,
+            'wiki'   => $this->takePackage()->wiki,
+            'forum'  => $this->takePackage()->forum,
         ]), (array) $this->getItem('support'));
     }
 
     public function getAuthors()
     {
         $res = [];
-        if ($this->package->authors) {
-            foreach ($this->package->authors as $nick => $all_data) {
+        if ($this->takePackage()->authors) {
+            foreach ($this->takePackage()->authors as $nick => $all_data) {
                 $data = [];
                 foreach (['name', 'role', 'email', 'homepage'] as $k) {
                     if ($all_data[$k]) {
@@ -89,9 +89,9 @@ class ComposerJsonGoal extends \hidev\goals\TemplateGoal
     {
         $autoload   = $this->rawItem('autoload');
         $psr4       = $autoload['psr-4'] ?: [];
-        $namespace  = $this->package->namespace;
+        $namespace  = $this->takePackage()->namespace;
         if (!array_key_exists($namespace, $psr4)) {
-            $psr4 = [$namespace . '\\' => $this->package->src] + $psr4;
+            $psr4 = [$namespace . '\\' => $this->takePackage()->src] + $psr4;
             $autoload['psr-4'] = $psr4;
             $this->setItem('autoload', $autoload);
         }

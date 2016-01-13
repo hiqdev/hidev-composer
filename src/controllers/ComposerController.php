@@ -9,18 +9,14 @@
  * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\composer\goals;
+namespace hidev\composer\controllers;
 
 /**
  * Goal for Composer.
  */
-class ComposerGoal extends \hidev\goals\DefaultGoal
+class ComposerController extends \hidev\controllers\CommonController
 {
-    public function init()
-    {
-        parent::init();
-        $this->setDeps('composer.json');
-    }
+    protected $_before = ['composer.json'];
 
     public function getNamespace()
     {
@@ -34,7 +30,7 @@ class ComposerGoal extends \hidev\goals\DefaultGoal
 
     public function getConfiguration()
     {
-        $conf = parent::getConfig()->get('composer.json');
+        $conf = $this->takeGoal('composer.json');
         $conf->runAction('load');
         return $conf;
     }

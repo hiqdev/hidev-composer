@@ -11,12 +11,48 @@
 
 namespace hidev\composer\controllers;
 
+use Yii;
+
 /**
  * Goal for Composer.
  */
 class ComposerController extends \hidev\controllers\CommonController
 {
     protected $_before = ['composer.json'];
+
+    public function actionInstall()
+    {
+        return $this->runActions(['before', 'do-install', 'after']);
+    }
+
+    public function actionUpdate()
+    {
+        return $this->runActions(['before', 'do-update', 'after']);
+    }
+
+    public function actionDoInstall()
+    {
+        $dir = Yii::getAlias('@prjdir/vendor');
+        return is_dir($dir) ? 0 : $this->run('install');
+    }
+
+    public function actionDoUpdate()
+    {
+        return $this->run('update');
+    }
+
+    public function run($command, $dir = null)
+    {
+        if ($dir === null) {
+            $dir = Yii::getAlias('@prjdir');
+        }
+        $args = [$command, '--ansi'];
+        if ($dir) {
+            $args[] = '-d';
+            $args[] = $dir;
+        }
+        return $this->passthru('composer', $args);
+    }
 
     public function getNamespace()
     {

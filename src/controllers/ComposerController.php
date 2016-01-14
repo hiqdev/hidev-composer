@@ -30,9 +30,15 @@ class ComposerController extends \hidev\controllers\CommonController
         return $this->runActions(['before', 'do-update', 'after']);
     }
 
+    public function actionSelfUpdate($version = null)
+    {
+        return $this->run('self-update', '');
+    }
+
     public function actionDoInstall()
     {
         $dir = Yii::getAlias('@prjdir/vendor');
+
         return is_dir($dir) ? 0 : $this->run('install');
     }
 

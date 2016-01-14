@@ -3,6 +3,9 @@ hiqdev/hidev-composer commits history
 
 ## Under development
 
+- Added `composer/install` and `composer/update` actions
+    - 884b07a 2016-01-14 + composer/install and update actions (sol@hiqdev.com)
+    - de25063 2016-01-14 updated .scrutinizer.yml (sol@hiqdev.com)
 - Changed: redone goals -> controllers
     - 75ada12 2016-01-13 renamed goals -> controllers, get -> take (sol@hiqdev.com)
     - bdd9ea8 2016-01-08 + empty PackagistGoal (sol@hiqdev.com)

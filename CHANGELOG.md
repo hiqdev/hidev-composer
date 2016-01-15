@@ -1,7 +1,7 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
-## Under development
+## 0.3.0 2016-01-15
 
 - Added composer `install`, `update` and `self-update` actions
 - Changed: redone goals -> controllers

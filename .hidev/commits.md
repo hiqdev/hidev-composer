@@ -1,6 +1,12 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## Under development
+
+- Fixed minor issues
+    - 33d0a8f 2016-03-10 removed require pluginmanager (sol@hiqdev.com)
+    - cc33953 2016-03-10 rehideved (sol@hiqdev.com)
+
 ## 0.3.0 2016-01-15
 
 - Added composer `install`, `update` and `self-update` actions

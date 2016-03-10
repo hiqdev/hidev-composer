@@ -1,11 +1,10 @@
 package:
     type:           yii2-extension
     name:           hidev-composer
-    namespace:      hidev\composer
-    headline:       HiDev Composer
     title:          Composer plugin for HiDev
+    headline:       HiDev Composer
     keywords:       hidev, composer, packagist, plugin
-    year:           2015
+    namespace:      hidev\composer
     description:    |
         [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 

@@ -1,7 +1,7 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
-## Under development
+## 0.3.1 2016-03-11
 
 - Fixed composer requirements
     - 0f358f4 2016-03-11 - require composer-extension-plugin (sol@hiqdev.com)

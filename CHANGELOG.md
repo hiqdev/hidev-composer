@@ -1,7 +1,7 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
-## Under development
+## 0.3.1 2016-03-11
 
 - Fixed composer requirements
 

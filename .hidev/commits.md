@@ -1,6 +1,11 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## 0.3.2 2016-03-30
+
+- Changed `extension-config` <- `yii2-extraconfig`
+    - d70c01f 2016-03-30 redoing to `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
+
 ## 0.3.1 2016-03-11
 
 - Fixed composer requirements

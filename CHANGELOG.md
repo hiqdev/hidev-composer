@@ -1,6 +1,11 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
+## 0.3.3 2016-04-13
+
+- Changed `hidev-config` <- `extension-config`
+- Added forced setting of `composer.json` type and name
+
 ## 0.3.2 2016-03-30
 
 - Changed `extension-config` <- `yii2-extraconfig`

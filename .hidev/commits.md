@@ -1,6 +1,13 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## 0.3.3 2016-04-13
+
+- Changed `hidev-config` <- `extension-config`
+    - 6a36bf5 2016-04-13 redone `extension-config` to `hidev-config` (sol@hiqdev.com)
+- Added forced setting of `composer.json` type and name
+    - a701b38 2016-04-13 + force setting type and name (sol@hiqdev.com)
+
 ## 0.3.2 2016-03-30
 
 - Changed `extension-config` <- `yii2-extraconfig`

@@ -22,8 +22,8 @@ class ComposerJsonController extends \hidev\controllers\FileController
     {
         parent::actionLoad();
         $sets = [
-            'name'        => $this->fullName,
-            'type'        => $this->type,
+            'name'        => $this->getName(),
+            'type'        => $this->getType(),
             'description' => $this->takePackage()->title,
             'keywords'    => $this->takePackage()->keywords,
             'homepage'    => $this->takePackage()->homepage,
@@ -44,16 +44,30 @@ class ComposerJsonController extends \hidev\controllers\FileController
 
     /**
      * Converts hidev type to composer type.
-     * TODO package type can be different from composer type.
+     * TODO composer type can be different from package type.
+     * @return string
      */
     public function getType()
     {
-        return $this->rawItem('type') ?: $this->takePackage()->type;
+        return $this->takePackage()->type;
     }
 
+    /**
+     * Converts hidev full name to composer name.
+     * TODO composer name can be different from package full name.
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->takePackage()->fullName;
+    }
+
+    /**
+     * @return string
+     */
     public function getFullName()
     {
-        return $this->getItem('name') ?: $this->takePackage()->fullName;
+        return $this->getName();
     }
 
     public function getSupport()

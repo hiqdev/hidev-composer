@@ -8,6 +8,7 @@ HiDev Composer
 [![Build Status](https://img.shields.io/travis/hiqdev/hidev-composer.svg)](https://travis-ci.org/hiqdev/hidev-composer)
 [![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-composer.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-composer/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-composer.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-composer/)
+[![Dependency Status](https://www.versioneye.com/php/hiqdev:hidev-composer/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hidev-composer/dev-master)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 

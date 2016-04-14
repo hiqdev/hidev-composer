@@ -1,6 +1,11 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## 0.3.4 2016-04-14
+
+- Fixed build with asset-packagist
+    - 8d401ea 2016-04-14 fixed build with asset-packagist (sol@hiqdev.com)
+
 ## 0.3.3 2016-04-13
 
 - Changed `hidev-config` <- `extension-config`

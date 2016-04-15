@@ -1,6 +1,10 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## 0.3.5 2016-04-15
+
+    - 15b8a93 2016-04-15 fixed `hiqdev/composer-extension-plugin` version constraint (sol@hiqdev.com)
+
 ## 0.3.4 2016-04-14
 
 - Fixed build with asset-packagist

@@ -1,6 +1,9 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
+## 0.3.5 2016-04-15
+
+
 ## 0.3.4 2016-04-14
 
 - Fixed build with asset-packagist

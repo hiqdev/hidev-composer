@@ -37,7 +37,7 @@ class ComposerController extends \hidev\controllers\CommonController
 
     public function actionDoInstall()
     {
-        $dir = Yii::getAlias('@prjdir/vendor');
+        $dir = Yii::getAlias('@root/vendor');
 
         return is_dir($dir) ? 0 : $this->run('install');
     }
@@ -50,7 +50,7 @@ class ComposerController extends \hidev\controllers\CommonController
     public function run($command, $dir = null)
     {
         if ($dir === null) {
-            $dir = Yii::getAlias('@prjdir');
+            $dir = Yii::getAlias('@root');
         }
         $args = [$command, '--ansi'];
         if ($dir) {

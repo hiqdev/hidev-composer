@@ -1,6 +1,10 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
+## 0.3.6 2016-05-06
+
+- Changed `@prjdir` to `@root`
+
 ## 0.3.5 2016-04-15
 
 

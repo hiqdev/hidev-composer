@@ -12,7 +12,9 @@ HiDev Composer
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
-This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev.
+This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev:
+
+- `composer.json` generation
 
 ## Installation
 

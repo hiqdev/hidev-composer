@@ -8,15 +8,7 @@ package:
     description:    |
         [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
-        This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev.
+        This plugin enables [Composer](https://getcomposer.org/) and [Packagist](https://packagist.org/) support for HiDev:
 
-require:
-    hiqdev/hidev-php:           "*@dev"
-    hiqdev/hidev-readme:        "*@dev"
-    hiqdev/hidev-travis:        "*@dev"
-    hiqdev/hidev-vendor:        "*@dev"
-    hiqdev/hidev-license:       "*@dev"
-    hiqdev/hidev-phpunit:       "*@dev"
-    hiqdev/hidev-composer:      "*@dev"
-    hiqdev/hidev-scrutinizer:   "*@dev"
-    hiqdev/hidev-php-cs-fixer:  "*@dev"
+        - `composer.json` generation
+

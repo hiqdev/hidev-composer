@@ -1,6 +1,10 @@
 hiqdev/hidev-composer changelog
 -------------------------------
 
+## 0.4.0 2016-05-21
+
+- Changed: redone to `composer-config-plugin`
+
 ## 0.3.6 2016-05-06
 
 - Changed `@prjdir` to `@root`

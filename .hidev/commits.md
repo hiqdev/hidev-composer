@@ -1,6 +1,11 @@
 hiqdev/hidev-composer commits history
 -------------------------------------
 
+## 0.4.0 2016-05-21
+
+- Changed: redone to `composer-config-plugin`
+    - 3aea266 2016-05-21 redoing to composer-config-plugin (sol@hiqdev.com)
+
 ## 0.3.6 2016-05-06
 
 - Changed `@prjdir` to `@root`

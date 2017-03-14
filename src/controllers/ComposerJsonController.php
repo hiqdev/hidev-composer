@@ -88,7 +88,7 @@ class ComposerJsonController extends \hidev\controllers\FileController
             foreach ($this->takePackage()->authors as $nick => $all_data) {
                 $data = [];
                 foreach (['name', 'role', 'email', 'homepage'] as $k) {
-                    if ($all_data[$k]) {
+                    if (!empty($all_data[$k])) {
                         $data[$k] = $all_data[$k];
                     }
                 }

@@ -9,40 +9,58 @@
  * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\composer\controllers;
+namespace hidev\composer\console;
 
 use Yii;
 
 /**
- * Goal for Composer.
+ * Composer.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
  */
-class ComposerController extends \hidev\controllers\CommonController
+class ComposerController extends \hidev\base\Controller
 {
     protected $_before = ['composer.json'];
 
+    /**
+     * Does `composer install`
+     */
+    public function actionIndex()
+    {
+        return $this->doInstall();
+    }
+
+    /**
+     * Does `composer install`
+     */
     public function actionInstall()
     {
-        return $this->runActions(['before', 'do-install', 'after']);
+        return $this->doInstall();
     }
 
+    /**
+     * Does `composer install`
+     */
     public function actionUpdate()
     {
-        return $this->runActions(['before', 'do-update', 'after']);
+        return $this->doUpdate();
     }
 
+    /**
+     * Does `composer self-update`
+     */
     public function actionSelfUpdate($version = null)
     {
         return $this->run('self-update', '');
     }
 
-    public function actionDoInstall()
+    public function doInstall()
     {
         $dir = Yii::getAlias('@root/vendor');
 
         return is_dir($dir) ? 0 : $this->run('install');
     }
 
-    public function actionDoUpdate()
+    public function doUpdate()
     {
         return $this->run('update');
     }
@@ -53,27 +71,11 @@ class ComposerController extends \hidev\controllers\CommonController
             $dir = Yii::getAlias('@root');
         }
         $args = [$command, '--ansi'];
-        if ($dir) {
+        if ($dir && $dir !== getcwd()) {
             $args[] = '-d';
             $args[] = $dir;
         }
+
         return $this->passthru('composer', $args);
-    }
-
-    public function getNamespace()
-    {
-        return @trim(key($this->getConfiguration()->getFile()->get('autoload')['psr-4']), '\\');
-    }
-
-    public function getFullName()
-    {
-        return $this->getConfiguration()->getFullName();
-    }
-
-    public function getConfiguration()
-    {
-        $conf = $this->takeGoal('composer.json');
-        $conf->runAction('load');
-        return $conf;
     }
 }

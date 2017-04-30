@@ -9,30 +9,31 @@
  * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\composer\controllers;
+namespace hidev\composer\components;
 
 /**
- * Goal for composer.json.
+ * `composer.json` config file.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
  */
-class ComposerJsonController extends \hidev\controllers\FileController
+class ComposerJson extends \hidev\components\ConfigFile
 {
     protected $_file = 'composer.json';
 
-    public function actionLoad()
+    public function load()
     {
-        parent::actionLoad();
+        parent::load();
         $sets = [
             'name'        => $this->getName(),
             'type'        => $this->getType(),
-            'description' => $this->takePackage()->title,
-            'keywords'    => $this->takePackage()->keywords,
-            'homepage'    => $this->takePackage()->homepage,
-            'license'     => $this->takePackage()->license,
-            'support'     => $this->support,
-            'authors'     => $this->authors,
-            'require'     => $this->require,
-            'require-dev' => $this->get('require-dev'),
-            'autoload'    => $this->autoload,
+            'description' => $this->take('package')->title,
+            'keywords'    => $this->take('package')->keywords,
+            'homepage'    => $this->take('package')->homepage,
+            'license'     => $this->take('package')->license,
+            'support'     => $this->getSupport(),
+            'authors'     => $this->getAuthors(),
+            'require'     => $this->getRequire(),
+            'require-dev' => $this->getRequireDev(),
+            'autoload'    => $this->getAutoload(),
         ];
         $this->setItems($sets, 'first');
         foreach (['require', 'require-dev'] as $k) {
@@ -49,7 +50,7 @@ class ComposerJsonController extends \hidev\controllers\FileController
      */
     public function getType()
     {
-        return $this->takePackage()->type;
+        return $this->take('package')->type;
     }
 
     /**
@@ -59,7 +60,7 @@ class ComposerJsonController extends \hidev\controllers\FileController
      */
     public function getName()
     {
-        return $this->takePackage()->fullName;
+        return $this->take('package')->fullName;
     }
 
     /**
@@ -73,19 +74,18 @@ class ComposerJsonController extends \hidev\controllers\FileController
     public function getSupport()
     {
         return array_merge(array_filter([
-            'email'  => $this->takeVendor()->email,
-            'source' => $this->takePackage()->source,
-            'issues' => $this->takePackage()->issues,
-            'wiki'   => $this->takePackage()->wiki,
-            'forum'  => $this->takePackage()->forum,
+            'email'  => $this->take('vendor')->email,
+            'source' => $this->take('package')->source,
+            'issues' => $this->take('package')->issues,
+            'wiki'   => $this->take('package')->wiki,
+            'forum'  => $this->take('package')->forum,
         ]), (array) $this->getItem('support'));
     }
 
     public function getAuthors()
     {
-        $res = [];
-        if ($this->takePackage()->authors) {
-            foreach ($this->takePackage()->authors as $nick => $all_data) {
+        if ($this->take('package')->authors) {
+            foreach ($this->take('package')->authors as $all_data) {
                 $data = [];
                 foreach (['name', 'role', 'email', 'homepage'] as $k) {
                     if (!empty($all_data[$k])) {
@@ -103,9 +103,9 @@ class ComposerJsonController extends \hidev\controllers\FileController
     {
         $autoload   = $this->rawItem('autoload');
         $psr4       = $autoload['psr-4'] ?: [];
-        $namespace  = $this->takePackage()->namespace;
+        $namespace  = $this->take('package')->namespace;
         if (!array_key_exists($namespace, $psr4)) {
-            $psr4 = [$namespace . '\\' => $this->takePackage()->src] + $psr4;
+            $psr4 = [$namespace . '\\' => $this->take('package')->src] + $psr4;
             $autoload['psr-4'] = $psr4;
             $this->setItem('autoload', $autoload);
         }

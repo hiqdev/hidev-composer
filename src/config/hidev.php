@@ -10,28 +10,34 @@
  */
 
 return [
+    'controllerMap' => [
+        'composer' => [
+            'class' => \hidev\composer\console\ComposerController::class,
+        ],
+        'composer.json' => [
+            'class' => \hidev\composer\console\ComposerJsonController::class,
+        ],
+        'packagist' => [
+            'class' => \hidev\composer\console\PackagistController::class,
+        ],
+    ],
     'components' => [
-        'config' => [
-            'composer' => [
-                'class' => 'hidev\composer\controllers\ComposerController',
-            ],
-            'composer.json' => [
-                'class' => 'hidev\composer\controllers\ComposerJsonController',
-            ],
-            'packagist' => [
-                'class' => 'hidev\composer\controllers\PackagistController',
-            ],
-            'readme' => [
-                'markdownBadges' => [
-                    'packagist.stable'    => '[![Latest Stable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ config.composer.fullName }})',
-                    'packagist.unstable'  => '[![Latest Unstable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ config.composer.fullName }})',
-                    'packagist.license'   => '[![License](https://poser.pugx.org/{{ config.composer.fullName }}/v/license)](https://packagist.org/packages/{{ config.composer.fullName }})',
-                    'packagist.downloads' => '[![Total Downloads](https://poser.pugx.org/{{ config.composer.fullName }}/downloads)](https://packagist.org/packages/{{ config.composer.fullName }})',
-                ],
-            ],
-            'vcsignore' => [
-                'vendor'        => 'vendor dirs',
-                'composer.lock' => 'composer lock files',
+        'vcsignore' => [
+            'vendor'        => 'vendor dirs',
+            'composer.lock' => 'composer lock files',
+        ],
+        'composer' => [
+            'class' => \hidev\composer\components\Composer::class,
+        ],
+        'composer.json' => [
+            'class' => \hidev\composer\components\ComposerJson::class,
+        ],
+        'readme' => [
+            'knownBadges' => [
+                'packagist.stable'    => '[![Latest Stable Version](https://poser.pugx.org/{{ app.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ app.composer.fullName }})',
+                'packagist.unstable'  => '[![Latest Unstable Version](https://poser.pugx.org/{{ app.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ app.composer.fullName }})',
+                'packagist.license'   => '[![License](https://poser.pugx.org/{{ app.composer.fullName }}/v/license)](https://packagist.org/packages/{{ app.composer.fullName }})',
+                'packagist.downloads' => '[![Total Downloads](https://poser.pugx.org/{{ app.composer.fullName }}/downloads)](https://packagist.org/packages/{{ app.composer.fullName }})',
             ],
         ],
     ],

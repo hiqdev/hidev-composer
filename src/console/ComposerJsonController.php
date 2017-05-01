@@ -19,6 +19,6 @@ class ComposerJsonController extends \hidev\base\Controller
 {
     public function actionIndex()
     {
-        $this->take('composer.json')->actionSave();
+        $this->take('composer.json')->save();
     }
 }

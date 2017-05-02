@@ -12,8 +12,9 @@
 namespace hidev\composer\console;
 
 /**
- * Goal for Packagist.
+ * Packagist.
+ * XXX to be done: manage package at packagist.org - create, update
  */
-class PackagistController extends \hidev\controllers\DefaultController
+class PackagistController extends \hidev\base\Controller
 {
 }

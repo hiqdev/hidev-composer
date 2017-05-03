@@ -1,12 +1,11 @@
 <?php
-
-/*
+/**
  * Composer plugin for HiDev
  *
  * @link      https://github.com/hiqdev/hidev-composer
  * @package   hidev-composer
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hidev\composer\console;
@@ -22,7 +21,7 @@ class ComposerController extends \hidev\base\Controller
     protected $_before = ['composer.json'];
 
     /**
-     * Does `composer install`
+     * Does `composer install`.
      */
     public function actionIndex()
     {
@@ -30,7 +29,7 @@ class ComposerController extends \hidev\base\Controller
     }
 
     /**
-     * Does `composer install`
+     * Does `composer install`.
      */
     public function actionInstall()
     {
@@ -38,7 +37,7 @@ class ComposerController extends \hidev\base\Controller
     }
 
     /**
-     * Does `composer install`
+     * Does `composer install`.
      */
     public function actionUpdate()
     {
@@ -46,7 +45,7 @@ class ComposerController extends \hidev\base\Controller
     }
 
     /**
-     * Does `composer self-update`
+     * Does `composer self-update`.
      */
     public function actionSelfUpdate($version = null)
     {

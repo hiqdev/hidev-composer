@@ -1,79 +1,91 @@
 # hiqdev/hidev-composer
 
-## [Under development]
+## [0.6.0] - 2017-05-03
 
-    - [5d60af8] 2017-04-30 renamed `hidev.yml` <- .hidev/config.yml [sol@hiqdev.com]
-    - [53d73ae] 2017-04-30 redoing to new hidev [sol@hiqdev.com]
-    - [dd2e5d9] 2017-03-14 fixed warning [sol@hiqdev.com]
+- Redone to new hidev
+    - [78c3501] 2017-05-03 csfixed [@hiqsol]
+    - [89b9696] 2017-05-03 fixed tests [@hiqsol]
+    - [0dd4161] 2017-05-01 moved ConfigFile to `hidev\base` [@hiqsol]
+    - [5d60af8] 2017-04-30 renamed `hidev.yml` <- .hidev/config.yml [@hiqsol]
+    - [53d73ae] 2017-04-30 redoing to new hidev [@hiqsol]
+    - [dd2e5d9] 2017-03-14 fixed warning [@hiqsol]
 
 ## [0.4.0] - 2016-05-21
 
 - Changed: redone to `composer-config-plugin`
-    - [3aea266] 2016-05-21 redoing to composer-config-plugin [sol@hiqdev.com]
+    - [3aea266] 2016-05-21 redoing to composer-config-plugin [@hiqsol]
 
 ## [0.3.6] - 2016-05-06
 
 - Changed `@prjdir` to `@root`
-    - [4c2111d] 2016-05-06 redone to locally installed hidev plugins [sol@hiqdev.com]
-    - [4e62b5e] 2016-05-06 REDONE @prjdir to @root [sol@hiqdev.com]
+    - [4c2111d] 2016-05-06 redone to locally installed hidev plugins [@hiqsol]
+    - [4e62b5e] 2016-05-06 REDONE @prjdir to @root [@hiqsol]
 
 ## [0.3.5] - 2016-04-15
 
-    - [15b8a93] 2016-04-15 fixed `hiqdev/composer-extension-plugin` version constraint [sol@hiqdev.com]
+    - [15b8a93] 2016-04-15 fixed `hiqdev/composer-extension-plugin` version constraint [@hiqsol]
 
 ## [0.3.4] - 2016-04-14
 
 - Fixed build with asset-packagist
-    - [8d401ea] 2016-04-14 fixed build with asset-packagist [sol@hiqdev.com]
+    - [8d401ea] 2016-04-14 fixed build with asset-packagist [@hiqsol]
 
 ## [0.3.3] - 2016-04-13
 
 - Changed `hidev-config` <- `extension-config`
-    - [6a36bf5] 2016-04-13 redone `extension-config` to `hidev-config` [sol@hiqdev.com]
+    - [6a36bf5] 2016-04-13 redone `extension-config` to `hidev-config` [@hiqsol]
 - Added forced setting of `composer.json` type and name
-    - [a701b38] 2016-04-13 + force setting type and name [sol@hiqdev.com]
+    - [a701b38] 2016-04-13 + force setting type and name [@hiqsol]
 
 ## [0.3.2] - 2016-03-30
 
 - Changed `extension-config` <- `yii2-extraconfig`
-    - [d70c01f] 2016-03-30 redoing to `extension-config` <- `yii2-extraconfig` [sol@hiqdev.com]
+    - [d70c01f] 2016-03-30 redoing to `extension-config` <- `yii2-extraconfig` [@hiqsol]
 
 ## [0.3.1] - 2016-03-11
 
 - Fixed composer requirements
-    - [0f358f4] 2016-03-11 - require composer-extension-plugin [sol@hiqdev.com]
-    - [33d0a8f] 2016-03-10 removed require pluginmanager [sol@hiqdev.com]
-    - [cc33953] 2016-03-10 rehideved [sol@hiqdev.com]
+    - [0f358f4] 2016-03-11 - require composer-extension-plugin [@hiqsol]
+    - [33d0a8f] 2016-03-10 removed require pluginmanager [@hiqsol]
+    - [cc33953] 2016-03-10 rehideved [@hiqsol]
 
 ## [0.3.0] - 2016-01-15
 
 - Added composer `install`, `update` and `self-update` actions
-    - [a4de551] 2016-01-15 fixed tests [sol@hiqdev.com]
-    - [9e7735e] 2016-01-14 + `composer/self-update` action [sol@hiqdev.com]
-    - [884b07a] 2016-01-14 + composer/install and update actions [sol@hiqdev.com]
-    - [de25063] 2016-01-14 updated .scrutinizer.yml [sol@hiqdev.com]
+    - [a4de551] 2016-01-15 fixed tests [@hiqsol]
+    - [9e7735e] 2016-01-14 + `composer/self-update` action [@hiqsol]
+    - [884b07a] 2016-01-14 + composer/install and update actions [@hiqsol]
+    - [de25063] 2016-01-14 updated .scrutinizer.yml [@hiqsol]
 - Changed: redone goals -> controllers
-    - [75ada12] 2016-01-13 renamed goals -> controllers, get -> take [sol@hiqdev.com]
-    - [bdd9ea8] 2016-01-08 + empty PackagistGoal [sol@hiqdev.com]
+    - [75ada12] 2016-01-13 renamed goals -> controllers, get -> take [@hiqsol]
+    - [bdd9ea8] 2016-01-08 + empty PackagistGoal [@hiqsol]
 - Changed: redone with yii2-extraconfig
-    - [727be1d] 2016-01-06 vcsignore moved to extraconfig [sol@hiqdev.com]
-    - [6322bf5] 2016-01-06 changed config structure [sol@hiqdev.com]
-    - [7812dfc] 2016-01-06 redoing with yii2-extraconfig [sol@hiqdev.com]
+    - [727be1d] 2016-01-06 vcsignore moved to extraconfig [@hiqsol]
+    - [6322bf5] 2016-01-06 changed config structure [@hiqsol]
+    - [7812dfc] 2016-01-06 redoing with yii2-extraconfig [@hiqsol]
 
 ## [0.2.0] - 2015-12-23
 
 - Added `markdownBadges`
-    - [146fd07] 2015-12-23 + markdownBadges [sol@hiqdev.com]
+    - [146fd07] 2015-12-23 + markdownBadges [@hiqsol]
 
 ## [0.0.1] - 2015-12-23
 
 - Added basics
-    - [ffd690a] 2015-12-23 fixed build [sol@hiqdev.com]
-    - [3430382] 2015-12-22 fixing [sol@hiqdev.com]
-    - [94c8ecf] 2015-12-21 inited [sol@hiqdev.com]
+    - [ffd690a] 2015-12-23 fixed build [@hiqsol]
+    - [3430382] 2015-12-22 fixing [@hiqsol]
+    - [94c8ecf] 2015-12-21 inited [@hiqsol]
 
 ## [Development started] - 2015-12-21
 
+[@hiqsol]: https://github.com/hiqsol
+[sol@hiqdev.com]: https://github.com/hiqsol
+[@SilverFire]: https://github.com/SilverFire
+[d.naumenko.a@gmail.com]: https://github.com/SilverFire
+[@tafid]: https://github.com/tafid
+[andreyklochok@gmail.com]: https://github.com/tafid
+[@BladeRoot]: https://github.com/BladeRoot
+[bladeroot@gmail.com]: https://github.com/BladeRoot
 [3aea266]: https://github.com/hiqdev/hidev-composer/commit/3aea266
 [4c2111d]: https://github.com/hiqdev/hidev-composer/commit/4c2111d
 [4e62b5e]: https://github.com/hiqdev/hidev-composer/commit/4e62b5e
@@ -112,3 +124,7 @@
 [0.3.0]: https://github.com/hiqdev/hidev-composer/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/hiqdev/hidev-composer/compare/0.0.1...0.2.0
 [0.0.1]: https://github.com/hiqdev/hidev-composer/releases/tag/0.0.1
+[78c3501]: https://github.com/hiqdev/hidev-composer/commit/78c3501
+[89b9696]: https://github.com/hiqdev/hidev-composer/commit/89b9696
+[0dd4161]: https://github.com/hiqdev/hidev-composer/commit/0dd4161
+[0.6.0]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...0.6.0

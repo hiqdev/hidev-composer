@@ -1,22 +1,21 @@
 <?php
-
-/*
+/**
  * Composer plugin for HiDev
  *
  * @link      https://github.com/hiqdev/hidev-composer
  * @package   hidev-composer
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\composer\tests\unit\controllers;
+namespace hidev\composer\tests\unit\console;
 
-use hidev\composer\controllers\PackagistController;
+use hidev\composer\console\PackagistController;
 
 /**
  * Tests for PackagistController.
  */
-class PackagistControllerTest extends \PHPUnit_Framework_TestCase
+class PackagistControllerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PackagistController
@@ -34,6 +33,6 @@ class PackagistControllerTest extends \PHPUnit_Framework_TestCase
 
     public function testConstructor()
     {
-        $this->assertInstanceOf('hidev\base\Controller', $this->object);
+        $this->assertInstanceOf(\hidev\base\Controller::class, $this->object);
     }
 }

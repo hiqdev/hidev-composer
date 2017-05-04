@@ -1,5 +1,11 @@
 # hiqdev/hidev-composer
 
+## [0.6.1] - 2017-05-04
+
+- Disabled touching autoload
+    - [5fdaf19] 2017-05-04 disabled setting autoload [@hiqsol]
+    - [ef54d62] 2017-05-04 disabled setting namespace [@hiqsol]
+
 ## [0.6.0] - 2017-05-03
 
 - Redone to new hidev
@@ -113,7 +119,7 @@
 [5d60af8]: https://github.com/hiqdev/hidev-composer/commit/5d60af8
 [53d73ae]: https://github.com/hiqdev/hidev-composer/commit/53d73ae
 [dd2e5d9]: https://github.com/hiqdev/hidev-composer/commit/dd2e5d9
-[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...HEAD
+[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.0...HEAD
 [0.4.0]: https://github.com/hiqdev/hidev-composer/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/hiqdev/hidev-composer/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/hiqdev/hidev-composer/compare/0.3.4...0.3.5
@@ -128,3 +134,6 @@
 [89b9696]: https://github.com/hiqdev/hidev-composer/commit/89b9696
 [0dd4161]: https://github.com/hiqdev/hidev-composer/commit/0dd4161
 [0.6.0]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...0.6.0
+[5fdaf19]: https://github.com/hiqdev/hidev-composer/commit/5fdaf19
+[ef54d62]: https://github.com/hiqdev/hidev-composer/commit/ef54d62
+[0.6.1]: https://github.com/hiqdev/hidev-composer/compare/0.6.0...0.6.1

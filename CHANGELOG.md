@@ -1,5 +1,9 @@
 # hiqdev/hidev-composer
 
+## [0.6.1] - 2017-05-04
+
+- Disabled touching autoload ([@hiqsol])
+
 ## [0.6.0] - 2017-05-03
 
 - Redone to new hidev ([@hiqsol])
@@ -55,7 +59,7 @@
 [andreyklochok@gmail.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@gmail.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...HEAD
+[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.0...HEAD
 [0.4.0]: https://github.com/hiqdev/hidev-composer/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/hiqdev/hidev-composer/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/hiqdev/hidev-composer/compare/0.3.4...0.3.5
@@ -67,3 +71,4 @@
 [0.2.0]: https://github.com/hiqdev/hidev-composer/compare/0.0.1...0.2.0
 [0.0.1]: https://github.com/hiqdev/hidev-composer/releases/tag/0.0.1
 [0.6.0]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...0.6.0
+[0.6.1]: https://github.com/hiqdev/hidev-composer/compare/0.6.0...0.6.1

@@ -93,7 +93,7 @@ class ComposerJson extends \hidev\base\ConfigFile
     }
 
     /**
-     * XXX DISABLED, think if it's needed :-/
+     * XXX DISABLED, think if it's needed :-/.
      * @return array
      */
     public function old_getAutoload()

@@ -21,7 +21,7 @@ class ComposerJson extends \hidev\base\ConfigFile
     public function load()
     {
         parent::load();
-        $sets = [
+        $sets = array_filter([
             'name'        => $this->getName(),
             'type'        => $this->getType(),
             'description' => $this->take('package')->title,
@@ -32,14 +32,8 @@ class ComposerJson extends \hidev\base\ConfigFile
             'authors'     => $this->getAuthors(),
             'require'     => $this->getRequire(),
             'require-dev' => $this->getRequireDev(),
-            'autoload'    => $this->getAutoload(),
-        ];
+        ]);
         $this->setItems($sets, 'first');
-        foreach (['require', 'require-dev'] as $k) {
-            if (!$this->get($k)) {
-                $this->delete($k);
-            }
-        }
     }
 
     /**

@@ -92,7 +92,11 @@ class ComposerJson extends \hidev\base\ConfigFile
         return $res;
     }
 
-    public function getAutoload()
+    /**
+     * XXX DISABLED, think if it's needed :-/
+     * @return array
+     */
+    public function old_getAutoload()
     {
         $autoload   = $this->rawItem('autoload');
         $psr4       = $autoload['psr-4'] ?: [];

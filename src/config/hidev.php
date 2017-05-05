@@ -22,8 +22,8 @@ return [
     ],
     'components' => [
         'vcsignore' => [
-            'vendor'        => 'vendor dirs',
-            'composer.lock' => 'composer lock files',
+            '/vendor'        => 'composer internals',
+            '/composer.lock' => 'composer internals',
         ],
         'composer' => [
             'class' => \hidev\composer\components\Composer::class,

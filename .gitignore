@@ -18,21 +18,17 @@ nbproject
 # php-cs-fixer cache
 .php_cs.cache
 
-# vendor dirs
-vendor
-
-# composer lock files
-composer.lock
+# composer internals
+/composer.lock
+/vendor
 
 # phpunit generated files
 coverage.clover
 
-# PHARs
+# Binaries
+chkipper.phar
 composer.phar
+ocular.phar
 php-cs-fixer.phar
 phpunit-skelgen.phar
 phpunit.phar
-
-# Binaries
-chkipper.phar
-ocular.phar

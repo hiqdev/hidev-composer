@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/hidev-composer",
     "type": "yii2-extension",
-    "description": "Composer plugin for HiDev",
+    "description": "HiDev plugin for Composer",
     "keywords": [
         "hidev",
         "composer",

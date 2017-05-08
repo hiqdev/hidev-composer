@@ -1,6 +1,6 @@
 <?php
 /**
- * Composer plugin for HiDev
+ * HiDev plugin for Composer.
  *
  * @link      https://github.com/hiqdev/hidev-composer
  * @package   hidev-composer

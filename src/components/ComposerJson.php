@@ -14,7 +14,7 @@ namespace hidev\composer\components;
  * `composer.json` config file.
  * @author Andrii Vasyliev <sol@hiqdev.com>
  */
-class ComposerJson extends \hidev\base\ConfigFile
+class ComposerJson extends \hidev\components\File
 {
     protected $_file = 'composer.json';
 

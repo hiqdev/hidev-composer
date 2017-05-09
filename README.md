@@ -9,7 +9,7 @@
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-composer.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-composer/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:hidev-composer/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hidev-composer/dev-master)
 
-[HiDev] is a task runner, code generator and build tool for easier continuos integration.
+[HiDev] is the automation tool mixed with code generator for easier continuous development.
 
 This plugin enables [Composer] and [Packagist] support for HiDev:
 

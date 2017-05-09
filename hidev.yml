@@ -5,7 +5,7 @@ package:
     headline:       HiDev Composer
     keywords:       hidev, composer, packagist, plugin
     description:    |
-        [HiDev] is a task runner, code generator and build tool for easier continuos integration.
+        [HiDev] is the automation tool mixed with code generator for easier continuous development.
 
         This plugin enables [Composer] and [Packagist] support for HiDev:
 

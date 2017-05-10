@@ -1,5 +1,11 @@
 # hiqdev/hidev-composer
 
+## [0.6.3] - 2017-05-08
+
+- Renamed `File` <- ConfigFile
+    - [b7d2d99] 2017-05-08 csfixed [@hiqsol]
+    - [866aa84] 2017-05-08 renamed `File` <- ConfigFile [@hiqsol]
+
 ## [0.6.2] - 2017-05-05
 
 - Improved vcsignore comments
@@ -125,7 +131,7 @@
 [5d60af8]: https://github.com/hiqdev/hidev-composer/commit/5d60af8
 [53d73ae]: https://github.com/hiqdev/hidev-composer/commit/53d73ae
 [dd2e5d9]: https://github.com/hiqdev/hidev-composer/commit/dd2e5d9
-[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.1...HEAD
+[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.2...HEAD
 [0.4.0]: https://github.com/hiqdev/hidev-composer/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/hiqdev/hidev-composer/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/hiqdev/hidev-composer/compare/0.3.4...0.3.5
@@ -146,3 +152,6 @@
 [4eb0fb4]: https://github.com/hiqdev/hidev-composer/commit/4eb0fb4
 [76d84ac]: https://github.com/hiqdev/hidev-composer/commit/76d84ac
 [0.6.2]: https://github.com/hiqdev/hidev-composer/compare/0.6.1...0.6.2
+[b7d2d99]: https://github.com/hiqdev/hidev-composer/commit/b7d2d99
+[866aa84]: https://github.com/hiqdev/hidev-composer/commit/866aa84
+[0.6.3]: https://github.com/hiqdev/hidev-composer/compare/0.6.2...0.6.3

@@ -1,5 +1,9 @@
 # hiqdev/hidev-composer
 
+## [0.6.3] - 2017-05-08
+
+- Renamed `File` <- ConfigFile ([@hiqsol])
+
 ## [0.6.2] - 2017-05-05
 
 - Improved vcsignore comments ([@hiqsol])
@@ -63,7 +67,7 @@
 [andreyklochok@gmail.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@gmail.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.1...HEAD
+[Under development]: https://github.com/hiqdev/hidev-composer/compare/0.6.2...HEAD
 [0.4.0]: https://github.com/hiqdev/hidev-composer/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/hiqdev/hidev-composer/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/hiqdev/hidev-composer/compare/0.3.4...0.3.5
@@ -77,3 +81,4 @@
 [0.6.0]: https://github.com/hiqdev/hidev-composer/compare/0.4.0...0.6.0
 [0.6.1]: https://github.com/hiqdev/hidev-composer/compare/0.6.0...0.6.1
 [0.6.2]: https://github.com/hiqdev/hidev-composer/compare/0.6.1...0.6.2
+[0.6.3]: https://github.com/hiqdev/hidev-composer/compare/0.6.2...0.6.3

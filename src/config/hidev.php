@@ -19,6 +19,11 @@ return [
         'packagist' => [
             'class' => \hidev\composer\console\PackagistController::class,
         ],
+        'deploy' => [
+            'before' => [
+                'composer/dump-autoload',
+            ],
+        ],
     ],
     'components' => [
         'vcsignore' => [

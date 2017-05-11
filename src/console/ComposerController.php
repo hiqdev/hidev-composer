@@ -20,13 +20,7 @@ class ComposerController extends \hidev\base\Controller
 {
     protected $_before = ['composer.json'];
 
-    /**
-     * Does `composer install`.
-     */
-    public function actionIndex()
-    {
-        return $this->doInstall();
-    }
+    public $defaultAction = 'install';
 
     /**
      * Does `composer install`.
@@ -50,6 +44,14 @@ class ComposerController extends \hidev\base\Controller
     public function actionSelfUpdate($version = null)
     {
         return $this->run('self-update', '');
+    }
+
+    /**
+     * Does `composer dump-autoload`.
+     */
+    public function actionDumpAutoload()
+    {
+        return $this->run('dump-autoload');
     }
 
     public function doInstall()

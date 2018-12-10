@@ -1,0 +1,25 @@
+app:
+    controllerMap:
+        composer:
+            __class: hidev\composer\console\ComposerController
+        composer.json:
+            __class: hidev\composer\console\ComposerJsonController
+        packagist:
+            __class: hidev\composer\console\PackagistController
+
+vcsignore:
+    /vendor: composer internals
+    /composer.lock: composer internals
+
+composer:
+    __class: hidev\composer\components\Composer
+
+composer.json:
+    __class: hidev\composer\components\ComposerJson
+
+readme:
+    knownBadges:
+        packagist.stable:       '[![Latest Stable Version](https://poser.pugx.org/{{ app.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ app.composer.fullName }})'
+        packagist.unstable:     '[![Latest Unstable Version](https://poser.pugx.org/{{ app.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ app.composer.fullName }})'
+        packagist.license:      '[![License](https://poser.pugx.org/{{ app.composer.fullName }}/v/license)](https://packagist.org/packages/{{ app.composer.fullName }})'
+        packagist.downloads:    '[![Total Downloads](https://poser.pugx.org/{{ app.composer.fullName }}/downloads)](https://packagist.org/packages/{{ app.composer.fullName }})'

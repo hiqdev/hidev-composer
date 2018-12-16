@@ -16,7 +16,10 @@ namespace hidev\composer\components;
  */
 class ComposerJson extends \hidev\components\File
 {
-    protected $_file = 'composer.json';
+    public function __construct(string $file = 'composer.json')
+    {
+        parent::__construct($file);
+    }
 
     public function load()
     {

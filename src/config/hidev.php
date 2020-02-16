@@ -40,4 +40,7 @@ return [
             ],
         ],
     ],
+    'aliases' => [
+        '@hidev/composer' => dirname(__DIR__),
+    ],
 ];
